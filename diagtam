@@ -1,1 +1,7 @@
+sequenceDiagram
+    participant browser
+    participant server
 
+    brower->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server->>brower: Status code 201 created
